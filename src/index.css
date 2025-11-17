@@ -1,0 +1,225 @@
+/* ------------------------------------------------------------
+   Global
+------------------------------------------------------------ */
+:root {
+  --accent: #4caf50; /* matches the green button in the template */
+  --text-dark: #0b1220;
+  --text-muted: #667085;
+  --bg-light: #f8fafc;
+}
+
+/* Typography */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text-dark);
+  background: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ------------------------------------------------------------
+   Navbar
+------------------------------------------------------------ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: background 0.25s, box-shadow 0.25s;
+  padding: 10px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nav--scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.nav--scrolled .nav-links a {
+  color: var(--text-dark);
+}
+
+/* ------------------------------------------------------------
+   HERO SECTION (matches your sushi image layout)
+------------------------------------------------------------ */
+
+.hero {
+  height: 60vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('/public/DP_1.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-inner {
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero .lead {
+  /* margin-top: 15px; */
+  font-size: 18px;
+  /* max-width: 650px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  color: #f8fafc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff !important;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------
+   Section Layout (About, Employment, Projects…)
+------------------------------------------------------------ */
+
+.section {
+  padding: 80px 0;
+}
+
+.gray {
+  background: var(--bg-light);
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------
+   About Section Styling
+------------------------------------------------------------ */
+
+.about-grid {
+  font-size: 16px;
+  color: var(--text-dark);
+  padding-right: 20px;
+  line-height: 1.75;
+}
+
+/* ------------------------------------------------------------
+   Employment List
+------------------------------------------------------------ */
+
+#projects ul {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+#projects ul li {
+  padding: 6px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------
+   Project Cards (match template's clean white cards)
+------------------------------------------------------------ */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.card p {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Footer
+------------------------------------------------------------ */
+
+.site-footer {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* ------------------------------------------------------------
+   Responsive
+------------------------------------------------------------ */
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero .lead {
+    font-size: 16px;
+  }
+}
+
