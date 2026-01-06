@@ -12,8 +12,10 @@ return (
 </p>
 Contact me : +1 6198400938  &nbsp;
 <div className="socials">
+
+<a href="https://medium.com/@saniyajaswani12" target="_blank" rel="noreferrer">Medium</a>   &nbsp;
+<a href="https://www.linkedin.com/in/saniya-jaswani-64649679/" target="_blank" rel="noreferrer">LinkedIn</a> &nbsp;
 <a href="https://github.com/saniyaJ/" target="_blank" rel="noreferrer">GitHub</a>   &nbsp;
-<a href="https://www.linkedin.com/in/saniya-jaswani-64649679/" target="_blank" rel="noreferrer">LinkedIn</a>
 </div>
 </div>
 </section>

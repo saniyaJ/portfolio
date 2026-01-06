@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaMoon, FaSearch } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMoon, FaSearch,FaMedium  } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 
 export default function NavBar(){
@@ -25,6 +25,9 @@ return (
 {/* <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a> */}
 <a href="/SaniyaJaswaniResume.pdf" download >Resume</a>
  {/* ICONS */}
+ <a href="https://medium.com/@saniyajaswani12" target="_blank" rel="noreferrer">
+<FaMedium size={20} />
+</a>
 <a href="https://github.com/saniyaJ" target="_blank" rel="noreferrer">
 <FaGithub size={20} />
 </a>
